@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section name="unity" type="Microsoft.Practices.Unity.Configuration.UnityConfigurationSection,Microsoft.Practices.Unity.Configuration"/>
+  </configSections>
+  <unity xmlns="http://schemas.microsoft.com/practices/2010/unity">
+    <typeAliases>
+      <typeAlias alias="language" type="practice.Practice.ILanguage,practice"></typeAlias>
+      <typeAlias alias="chinese" type="practice.Practice.Chinese,practice"></typeAlias>
+      <typeAlias alias="japanese" type="practice.Practice.Japanese,practice"></typeAlias>
+      <typeAlias alias="english" type="practice.Practice.English,practice"></typeAlias>
+      <typeAlias alias="korea" type="practice.Practice.Korea,practice"></typeAlias>
+    </typeAliases>
+    <container>
+      <register type="language" mapTo="english"></register>
+    </container>
+  </unity>
+</configuration>
